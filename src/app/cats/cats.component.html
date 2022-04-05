@@ -1,0 +1,19 @@
+<a href="#" routerLink="">Back</a>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Text</th>
+        <th scope="col">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let f of catsFacts">
+        <th scope="row">{{f._id}}</th>
+        <td>{{f.text}}</td>
+        <td>{{f.type}}</td>
+      </tr>
+    </tbody>
+  </table>
